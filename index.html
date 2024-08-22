@@ -5,10 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Rowdies:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <main class="hidden">
+        <div class="scores">
+            <div class="scores__container">
+                <p class="scores__label">Name 1</p>
+                <p class="scores__number">X</p>
+            </div>
+            <div class="scores__container">
+                <p class="scores__label">Name 2</p>
+                <p class="scores__number">O</p>
+            </div>
+        </div>
+        <div class="board">
+            <div class="board__row">
+                <div class="board__cell" data-row="1" data-column="1"></div>
+                <div class="board__cell" data-row="1" data-column="2"></div>
+                <div class="board__cell" data-row="1" data-column="3"></div>
+            </div>
+            <div class="board__row">
+                <div class="board__cell" data-row="2" data-column="1"></div>
+                <div class="board__cell" data-row="2" data-column="2"></div>
+                <div class="board__cell" data-row="2" data-column="3"></div>
+            </div>
+            <div class="board__row">
+                <div class="board__cell" data-row="3" data-column="1"></div>
+                <div class="board__cell" data-row="3" data-column="2"></div>
+                <div class="board__cell" data-row="3" data-column="3"></div>
+            </div>
+        </div>
+        <p class="message hidden"></p>
+        <button class="btn btn-restart hidden">Restart</button>
+    </main>
+    <div class="new-game">
+        <div class="names">
+            <div class="names__container names__container--one">
+                <p class="names__label">player one name</p>
+                <input type="text" class="names__input names__input--one">
+            </div>
+            <div class="names__container names__container--two">
+                <p class="names__label">player two name</p>
+                <input type="text" class="names__input names__input--two">
+            </div>
+        </div>
+        <button type="button" class="btn btn-start">Start</button>
+    </div>
     <script src="script.js"></script>
 </body>
 
